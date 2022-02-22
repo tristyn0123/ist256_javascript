@@ -1,0 +1,71 @@
+<!DOCTYPE hmtl>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<title>PSU JavaScript Lab </title>
+
+</head>
+<body>
+<script type = "text/javascript>
+
+const EVENT_NAME = "Olympics 2022"
+
+console.log("Browser is " +navigator.vendor)
+
+console.log("Event: " + EVENT_NAME)
+
+let athleteName = "Shaun White"
+let athleteHeight = "5'9\""
+console.log(athleteName + " is " + athleteHeight + " .")
+
+athleteName = "Mikaela Shiffrin"
+athleteHeight = "5'7\""
+console.log(athleteName + " is " + athleteHeight + " .")
+
+let olympicEvents = ["Curling", "Figure Skating", "Snowboarding"]
+console.log(olympicEvents)
+console.log("The first event is" + olympicEvents[0])
+
+let competingAthlete1 = {
+"name": "Shaun White",
+"birthYear": 1986,
+"event": "Halfpipe"
+}
+
+let competingAthlete2 = {
+"name": "Mikaela Shiffrin",
+"birthYear": 1995,
+"event": ["Super-G", "Gaint Slalom", "Downhill"]
+
+let competingAthletes = [competingAthlete1, competingAthlete2]
+
+console.log(competingAthletes)
+
+function getAge(birthYear) {
+return 2022 - birthYear
+}
+
+console.log(competingAthlete1.name + " is " + getAge(competingAthlete1.birthYear) + " years old"
+
+function isOlderThan30Years(birthYear){
+
+let YEARS_OLD = 2022 - birthYear
+
+if (birthYear > YEARS_OLD) {
+	console.log("Athelete is older than 30")
+
+}else if (YEARS_OLD == 30){
+console.log("Athlete is 30 years old)
+}else {
+console.log("Athlete is " + YEARS_OLD + " years old")
+}
+}
+
+isOlderThan30Years(competingAthlete1.birthYear)
+isOlderThan30Years(competingAthlete2.birthYear)
+
+
+	</script>
+</body>
+</html>
+
